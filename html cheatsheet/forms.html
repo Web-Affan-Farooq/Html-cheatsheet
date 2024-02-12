@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="action.php" method="get">
+      <fieldset> 
+         <legend>Personal information
+         </legend>
+        <p> <!--This is for First name-->
+          <label for="firstName">First Name</label>
+          <br>
+           <input type="text" name="FirstName" id="FirstName" placeholder="Type your name here" autocomplete="on" required="" autofocus="">
+        </p>
+
+        <br><br>
+
+        <p><!--This is for Last name-->
+              <label for="LastName">Last Name</label>
+          <br>
+               <input type="text" name="LastName" id="LastName" placeholder="Type your name here" autocomplete="on" required="">
+        </p>
+
+        <br><br>
+
+        <p><!--This is for Passwords-->
+            <label for="Password">Password</label>
+          <br>
+            <input type="Password" name="Password" id="Password" placeholder="......" autocomplete="on" required="" >
+        </p>
+
+        <br><br>
+
+         <p><!--This is an example of phone number -->
+            <label for="PhoneNumber">Phone number</label>
+            <br>
+            <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="555-555-555" autocomplete="on" required="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}-">
+         </p>
+ 
+         <br><br>
+
+         <p>  <!--This is For number input-->
+            <label for="LastName">Decade</label>
+            <br>
+            <input type="number" name="Decade" id="Decade" placeholder="select decade" autocomplete="on" required="" min="1950" max="2020" step="10" value="1980">
+         </p>
+ 
+         <br><br>
+
+         <p><!--This is select box-->
+            <label for="Coffee">Select your favourite coffee</label>
+            <br>
+            <select name="coffee" id="coffee" multiple >
+               <datalist>
+                <optgroup label="Coffees" id="coffees" >
+                 <option value="regular coffee">regular coffee</option>
+                 <option value="Iced coffee">Iced coffee</option>
+                </optgroup>
+                <optgroup label="expresso drinks">
+                 <option value="latte" selected>latte</option>
+                 <option value="Cappicino">Cappicino</option>
+                 <option value="cortado">cortado</option>
+                 <option value="americano">americano</option>
+                </optgroup>
+                <optgroup>Others</optgroup>
+               </datalist>
+            </select>
+         </p>
+ 
+         <br><br>
+
+         <p><!--This is for datalist (like google search)-->
+            <label for="Search">Search</label>
+            <br>
+            <input type="text" name="Search" id="Search" placeholder="Search anything" autocomplete="on" required="" list="coffee-list">
+            <datalist id="coffee-list">
+               <optgroup>
+                  <option value="Iced coffee">Iced coffee</option>
+                  <option value="regular coffee">regular coffee</option>
+               </optgroup>
+               <optgroup label="expresso drinks">
+                 <option value="latte" selected>latte</option>
+                 <option value="Cappicino">Cappicino</option>
+                 <option value="cortado">cortado</option>
+                 <option value="americano">americano</option>
+                </optgroup>
+            </datalist>
+         </p>
+         <br><br>
+
+         </fieldset> 
+         <fieldset>
+            <legend>Favourite food</legend>
+            <input type="radio" name="food" id="tacos" value="tacos">
+            <label for="Tacos">Tacos</label>
+            <input type="Radio" name="food" id="Biryani" value="biryani">
+            <label for="Biryani">Biryani</label>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+            <label for="select courses">Select courses:</label>
+            <input type="checkbox" id="checkbox" name="Web development"> web development
+         </fieldset>
+    </form>
+</body>
+</html>

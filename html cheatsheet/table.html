@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table example</title>
+    <style>
+        body {
+            background-color:rgb(53, 52, 52);
+        }
+        table, tr, td, th, caption {
+            border:1px solid #eee;
+            font-family: 'Courier New', Courier, monospace;
+            border-collapse:collapse;
+            padding: 0.5rem;
+            color:aliceblue;
+            width:10px;
+            height:20px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+   <table>
+    <thead>
+        <tr>
+          <th scope="col">courses</th>
+          <th>duration</th>
+          <th>pricing</th>
+          <th>pricing</th>
+          <th>pricing</th>
+          <th>timings</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">web development</th>
+            <td>App</td>
+            <td>App</td>
+            <td colspan="2">App development</td>
+            <td>11:00pm</td>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="row">App development</th>
+            <td rowspan="2">web development</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="2">11:00pm</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">App development</th>
+            <td colspan="4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt et saepe id ipsam </td>
+            <td>11:00pm</td>
+        </tr>
+    </tbody>
+   </table>
+</body>
+</html>
